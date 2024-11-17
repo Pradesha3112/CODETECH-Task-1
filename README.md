@@ -41,7 +41,8 @@ User Interaction Flow:
 3.The program validates the inputs, calculates the total and average, and assigns a letter grade.
 4.The results are displayed in a clear tabular format.
 
-Real-World Applications:
+Real-World Applications:![Screenshot (15)](https://github.com/user-attachments/assets/160b815a-2186-486c-8176-eeeb277a91d3)
+
 
 1.Automating grade management for schools and colleges.
 2.Developing advanced academic performance dashboards.

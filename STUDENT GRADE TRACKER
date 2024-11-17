@@ -1,0 +1,41 @@
+!pip install tabulate
+from tabulate import tabulate
+
+from tabulate import tabulate
+
+# Input number of subjects and grades
+tot_sub = int(input("Enter number of subjects: "))
+grade = {}
+
+for i in range(tot_sub):
+    sub = input("Enter subject name: ")
+    g = float(input("Enter the grade: "))
+    while g < 0 or g > 100:
+        print("Enter the grade between the range 0 to 100")
+        g = float(input("Enter the grade: "))
+    grade[sub] = g
+
+# Calculate total and average
+total = sum(grade.values())
+avg = total / tot_sub
+
+# Determine letter grade
+if avg >= 90:
+    lg='A'
+elif avg < 90 and avg >=80:
+    lg='B'
+elif avg < 80 and avg>=70:
+    lg='C'
+elif avg < 70 and avg >=60:
+    lg='D'
+else:
+    lg='F'
+# Prepare data for table
+table = [[sub, gr] for sub, gr in grade.items()]  # Convert dictionary to list of lists
+
+# Print the table
+print("\n-----GRADE REPORT-----")
+print(tabulate(table, headers=["Subject", "Grade"], tablefmt="grid"))
+print("TOTAL:",total)
+print(f"AVERAGE:{avg:.2f}")
+print("LETTER GRADE:",lg)

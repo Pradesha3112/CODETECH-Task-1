@@ -46,5 +46,5 @@ Real-World Applications:
 2.Developing advanced academic performance dashboards.
 3.Personal grade tracking for self-assessment and improvement.
 
-
+Sample input and output
 ![Screenshot (15)](https://github.com/user-attachments/assets/160b815a-2186-486c-8176-eeeb277a91d3)
